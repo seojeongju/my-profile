@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디지털 명함 & 포트폴리오 | 서정주 대표</title>
+    <!-- Tailwind CSS CDN 로드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter 폰트 설정 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9; /* Slate 100 */
+        }
+        .scroll-to-top {
+            transition: opacity 0.3s;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-800">
+
+    <!-- Tailwind Config for Custom Colors (WOW!!!3D Branding: Red & Blue) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#DC2626', /* Red 600 - WOW!!!3D Accent Color */
+                        'accent-blue': '#3b82f6', /* Blue 500 - Professional Accent */
+                        'bg-light': '#f8fafc', /* Slate 50 */
+                        'bg-dark': '#1e293b', /* Slate 800 */
+                    },
+                }
+            }
+        }
+    </script>
+
+    <main class="max-w-4xl mx-auto p-4 md:p-8">
+
+        <!-- 1. 프로필 헤더 섹션 (Header Section) -->
+        <header id="profile" class="bg-bg-dark text-white shadow-2xl rounded-xl p-8 mb-8 relative overflow-hidden">
+            <!-- 배경 그라데이션 효과: Dark Slate to Red -->
+            <div class="absolute inset-0 opacity-10 bg-gradient-to-br from-primary-red to-accent-blue"></div>
+            <div class="relative z-10 text-center">
+                <!-- 프로필 이미지 Placeholder -->
+                <div class="w-24 h-24 bg-primary-red rounded-full mx-auto mb-4 flex items-center justify-center border-4 border-white shadow-lg">
+                    <!-- 3D 프린팅/Maker Space를 상징하는 아이콘 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-white">
+                        <path d="M12 2v6h6v2H6V8h6V2zM6 14h12v-2H6v2zM6 18h12v-2H6v2zM12 22v-4h6v4H12zM6 22v-4H0v4h6z"></path>
+                    </svg>
+                </div>
+
+                <h1 class="text-3xl md:text-4xl font-extrabold mb-1">서정주 (Jeong Ju Seo)</h1>
+                <p class="text-primary-red font-semibold text-lg mb-2 bg-white inline-block px-3 py-1 rounded-full shadow-md">대표 / (사)3D프린팅산업협회 지회장</p>
+                <p class="text-gray-300 mt-3 max-w-lg mx-auto">
+                    3D프린팅 및 메이커 스페이스 혁신을 선도하며, 미래 제조 산업의 새로운 가치를 창출합니다.
+                </p>
+            </div>
+        </header>
+
+        <!-- 2. 빠른 연락처 정보 카드 (Contact Info Card) -->
+        <section id="contact" class="bg-white shadow-xl rounded-xl p-6 mb-8 transform hover:shadow-2xl transition duration-300">
+            <h2 class="text-2xl font-bold text-primary-red mb-4 border-b pb-2">빠른 연락처</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                
+                <!-- 이메일 (jayseo36@gmail.com) -->
+                <a href="mailto:jayseo36@gmail.com" class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg hover:bg-accent-blue/10 transition group">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-accent-blue group-hover:text-primary-red">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0l-7.172 6.586a2.25 2.25 0 0 1-2.656 0L2.25 6.75" />
+                    </svg>
+                    <div>
+                        <p class="text-sm text-gray-500">이메일</p>
+                        <p class="font-medium text-gray-900 group-hover:text-accent-blue">jayseo36@gmail.com</p>
+                    </div>
+                </a>
+
+                <!-- 전화번호 (010.5479.5536) -->
+                <a href="tel:01054795536" class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg hover:bg-accent-blue/10 transition group">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-accent-blue group-hover:text-primary-red">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.18.448l-1.448 1.932a4.422 4.422 0 0 1-3.636 1.157 4.422 4.422 0 0 1-3.636-1.157l-1.448-1.932c-.278-.393-.74-.558-1.18-.448L3.629 18.006A1.5 1.5 0 0 1 2.25 16.5v-1.372m0 0a15.268 15.268 0 0 1 1.057-2.659 15.268 15.268 0 0 1 2.659-1.057m0 0h1.372a2.25 2.25 0 0 1 2.25 2.25v1.372m0 0c0 4.142 3.358 7.5 7.5 7.5h1.372a2.25 2.25 0 0 0 2.25-2.25v-1.372" />
+                    </svg>
+                    <div>
+                        <p class="text-sm text-gray-500">휴대폰 (Mobile)</p>
+                        <p class="font-medium text-gray-900 group-hover:text-accent-blue">010-5479-5536</p>
+                    </div>
+                </a>
+
+                <!-- 웹사이트 (www.wow3d.co.kr) -->
+                <a href="http://www.wow3d.co.kr" target="_blank" class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg hover:bg-accent-blue/10 transition group">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-accent-blue group-hover:text-primary-red">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l-3-7.5L21 3l-7.5 3 7.5 3 3-7.5-7.5 3-7.5 3 3-7.5 3 7.5 3-7.5 7.5-3zM21 3l-7.5 7.5m7.5-7.5L10.5 21M3 21h18"></path>
+                    </svg>
+                    <div>
+                        <p class="text-sm text-gray-500">홈페이지</p>
+                        <p class="font-medium text-gray-900 group-hover:text-accent-blue">www.wow3d.co.kr</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. 회사 및 조직 소개 (Company Introduction) -->
+        <section id="company" class="bg-bg-light shadow-xl rounded-xl p-6 mb-8">
+            <h2 class="text-2xl font-bold text-primary-red mb-4 border-b pb-2">소속: (주)와우쓰리디 & 3D프린팅산업협회</h2>
+            
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">WOW!!!3D (Maker Space)</h3>
+            <p class="text-gray-700 mb-4">
+                (주)와우쓰리디는 3D 프린팅 기술과 메이커 스페이스 운영을 통해 창의적인 아이디어를 현실화하는 전문 기업입니다. 시제품 제작, 교육, 컨설팅 등 미래 제조 환경 조성에 기여하고 있습니다.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">주요 지역 거점 (3 Centers)</h3>
+            <div class="space-y-3 text-gray-700 list-disc pl-2">
+                
+                <div class="flex items-start space-x-2">
+                    <span class="pt-1 text-accent-blue">📍</span>
+                    <div>
+                        <p class="font-medium">와우쓰리디 홍대센터 (서울 지회)</p>
+                        <p class="text-sm text-gray-500">서울 마포구 독막로93 상수빌딩 4층</p>
+                        <p class="text-xs text-gray-400">T. 02.3144.3137 / F. 02.6455.3144</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-2">
+                    <span class="pt-1 text-accent-blue">📍</span>
+                    <div>
+                        <p class="font-medium">구미첨단의료기술타워 (중앙회)</p>
+                        <p class="text-sm text-gray-500">경북 구미시 산호대로 253 606호 (3DPIA 중앙회: 603호)</p>
+                        <p class="text-xs text-gray-400">T. 054.464.3137 / F. 02.6455.3144</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-2">
+                    <span class="pt-1 text-accent-blue">📍</span>
+                    <div>
+                        <p class="font-medium">와우쓰리디 전주센터</p>
+                        <p class="text-sm text-gray-500">전북특별자치도 전주시 덕진구 반룡로 109 A동 207호</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-6 border-t pt-4">
+                <h3 class="text-lg font-semibold text-gray-800">3D프린팅산업협회 (3DPIA)</h3>
+                <p class="text-gray-600 text-sm">3D 프린팅 산업 발전을 위한 정책 제언, 표준화, 기술 교류 및 교육을 담당하는 사단법인 조직입니다.</p>
+                <a href="http://www.3dpia.org" target="_blank" class="mt-2 inline-block text-accent-blue font-semibold hover:underline text-sm">협회 홈페이지 바로가기 &rarr;</a>
+            </div>
+        </section>
+
+        <!-- 4. 개인 포트폴리오 및 경험 (Personal Portfolio - Skills & Expertise) -->
+        <section id="portfolio" class="bg-white shadow-xl rounded-xl p-6 mb-8">
+            <h2 class="text-2xl font-bold text-primary-red mb-4 border-b pb-2">핵심 역량 및 경험</h2>
+
+            <!-- US-104: 역량 목록 -->
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">핵심 전문 기술 및 영역</h3>
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-primary-red/10 text-primary-red font-medium px-3 py-1 rounded-full text-sm">3D 프린팅 컨설팅</span>
+                <span class="bg-primary-red/10 text-primary-red font-medium px-3 py-1 rounded-full text-sm">메이커 스페이스 운영</span>
+                <span class="bg-primary-red/10 text-primary-red font-medium px-3 py-1 rounded-full text-sm">장비 교육 및 커리큘럼 개발</span>
+                <span class="bg-primary-red/10 text-primary-red font-medium px-3 py-1 rounded-full text-sm">산업 협회 네트워킹</span>
+                <span class="bg-primary-red/10 text-primary-red font-medium px-3 py-1 rounded-full text-sm">정책 제언 및 기획</span>
+            </div>
+            
+            <!-- US-105: 프로젝트 타임라인 (예시) -->
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6 border-t pt-4">주요 활동 경험 (Activity Timeline)</h3>
+            <div class="space-y-4">
+                <!-- 활동 1 -->
+                <div class="p-4 border-l-4 border-accent-blue rounded-r-lg bg-gray-50">
+                    <p class="text-sm font-bold text-accent-blue">2023 - 현재</p>
+                    <p class="font-semibold text-gray-900">지역 메이커 활성화 지원 사업 총괄</p>
+                    <p class="text-gray-600 text-sm">지역별 메이커 스페이스 연계 및 기술 이전 프로그램 기획 및 운영.</p>
+                </div>
+                <!-- 활동 2 -->
+                <div class="p-4 border-l-4 border-primary-red rounded-r-lg bg-gray-50">
+                    <p class="text-sm font-bold text-primary-red">2020 - 2022</p>
+                    <p class="font-semibold text-gray-900">3D 프린팅 산업 표준화 위원회 참여</p>
+                    <p class="text-gray-600 text-sm">산업 표준 및 가이드라인 제정에 참여하여 시장 안정화에 기여.</p>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <!-- 스크롤 버튼 -->
+    <a href="#profile" id="scrollToTopBtn" class="scroll-to-top fixed bottom-6 right-6 p-3 bg-accent-blue text-white rounded-full shadow-lg hover:bg-primary-red transition duration-300 opacity-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+        </svg>
+    </a>
+
+    <script>
+        // 스크롤 시 '맨 위로' 버튼 표시/숨기기 (FE-102 반영)
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollToTopBtn.classList.add('opacity-100');
+                scrollToTopBtn.classList.remove('opacity-0');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0');
+                scrollToTopBtn.classList.remove('opacity-100');
+            }
+        };
+
+        // 로딩 시 부드러운 애니메이션 효과 추가
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section, header');
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                    section.style.opacity = 1;
+                    section.style.transform = 'translateY(0)';
+                }, 100);
+            });
+        });
+    </script>
+
+</body>
+</html>
